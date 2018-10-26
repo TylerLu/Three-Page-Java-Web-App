@@ -3,18 +3,77 @@ html{
 }
 body{
     font-size: 16px;
-    overflow-y: hidden;
+    overflow-y:auto;
     overflow-x: hidden;
     padding:0 !important;
     margin:0;
     font-family: Poppins;
 }
+
+/*common*/
+.content .banner{
+    height:150px;
+    background-image: url("../images/apple-icon-114x114.png");
+    background-repeat: no-repeat;
+    background-size:60px 60px;
+    background-position: 168px 45px;
+    border-bottom:8px solid #253748;
+}
+.content .banner > div{
+    display:inline-block;
+}
+.content .banner .logo-content{
+    margin-top: 29px;
+    border-left:1px solid #707070;
+    margin-left:250px;
+    padding-left:30px;
+    height:93px;
+}
+.content .banner .logo-content ul{
+    list-style: none;
+    margin-top:0;
+    padding-top:18px;
+    padding-left:0;
+    font-size: 27px;
+    margin-bottom: 0;
+}
+.content .banner .logo-content ul li{
+    display: inline-block;
+    font-family: Poppins;
+    font-weight: 300;
+    color:#568c90;
+}
+.content .banner .logo-content ul li:nth-child(2){
+    font-weight: 600;
+    color:#253748;
+    margin-left: -5px;
+}
+.content .banner .logo-content ul li:last-child{
+    color:#5b8c90;
+    font-size:10px;
+    vertical-align: top;
+}
+.content .banner .logo-content .bottom{
+    font-family: Poppins;
+    font-weight:700;
+    font-size:9px;
+    text-transform: uppercase;
+    letter-spacing: 4.2px;
+}
+.content .main {
+    background-color:#f9f9f9;
+    height: 100vh;
+}
+
+
 .login.content{
 
 }
 .login.content .banner{
     height: 312px;
     text-align: right;
+    background-image:none;
+    border-bottom:0px;
 }
 .login.content .banner > div{
     display:inline-block;
@@ -71,8 +130,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 60px;
-}
-.login.content .banner .right{
     width:49%;
 }
 .login.content .main{
@@ -123,59 +180,10 @@ body{
     padding-top: 11px;
 }
 
-.guest.content .banner{
-    height:150px;
-    background-image: url("../images/apple-icon-114x114.png");
-    background-repeat: no-repeat;
-    background-size:60px 60px;
-    background-position: 168px 45px;
-    border-bottom:8px solid #253748;
-}
-.guest.content .banner > div{
-    display:inline-block;
-}
-.guest.content .banner .logo-content{
-    margin-top: 29px;
-    border-left:1px solid #707070;
-    margin-left:250px;
-    padding-left:30px;
-    height:93px;
-}
-.guest.content .banner .logo-content ul{
-    list-style: none;
-    margin-top:0;
-    padding-top:18px;
-    padding-left:0;
-    font-size: 27px;
-    margin-bottom: 0;
-}
-.guest.content .banner .logo-content ul li{
-    display: inline-block;
-    font-family: Poppins;
-    font-weight: 300;
-    color:#568c90;
-}
-.guest.content .banner .logo-content ul li:nth-child(2){
-    font-weight: 600;
-    color:#253748;
-    margin-left: -5px;
-}
-.guest.content .banner .logo-content ul li:last-child{
-    color:#5b8c90;
-    font-size:10px;
-    vertical-align: top;
-}
-.guest.content .banner .logo-content .bottom{
-    font-family: Poppins;
-    font-weight:700;
-    font-size:9px;
-    text-transform: uppercase;
-    letter-spacing: 4.2px;
-}
+/* guest */
+
 .guest.content .main{
     padding:26px 140px 0 140px;
-    background-color:#f9f9f9;
-    height: 100vh;
 }
 .guest.content .main .search{
     display: table;
@@ -285,5 +293,10 @@ body{
 }
 .guest.content .main .guest-list>ul>li.guest-row.hidden{
     display: none;
+}
+
+/* coupon */
+.coupon.content .main .back-link a:before{
+    content:  "<";
 }
 
