@@ -1,0 +1,289 @@
+html{
+
+}
+body{
+    font-size: 16px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding:0 !important;
+    margin:0;
+    font-family: Poppins;
+}
+.login.content{
+
+}
+.login.content .banner{
+    height: 312px;
+    text-align: right;
+}
+.login.content .banner > div{
+    display:inline-block;
+}
+.login.content .banner .left{
+    width:49%;
+    height:100%;
+    vertical-align: top;
+    text-align: left;
+    background-image: url("../images/apple-icon-114x114.png");
+    background-repeat: no-repeat;
+    background-size:114px 114px;
+    background-position: 63px 80px;
+}
+.login.content .banner .logo-content{
+    margin-top: 50px;
+    border-left:1px solid #707070;
+    margin-left:210px;
+    padding-left:53px;
+    height:184px;
+}
+.login.content .banner .left ul{
+    list-style: none;
+    margin-top:0;
+    padding-top:37px;
+    padding-left:0;
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.login.content .banner .left ul li{
+    display: inline-block;
+    font-family: Poppins;
+    font-weight: 300;
+    color:#568c90;
+}
+.login.content .banner .left ul li:nth-child(2){
+    font-weight: 600;
+    color:#253748;
+}
+.login.content .banner .left ul li:last-child{
+    color:#5b8c90;
+    font-size:20px;
+    vertical-align: top;
+}
+.login.content .banner .left .bottom{
+    font-family: Poppins;
+    font-weight:700;
+    font-size:18px;
+    letter-spacing: 6.8px;
+}
+.login.content .banner .right{
+    background-image: url("../images/room_detail.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60px;
+}
+.login.content .banner .right{
+    width:49%;
+}
+.login.content .main{
+    background-color: #253748;
+    height:100vh;
+    color: #fff;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 18px;
+}
+.login.content .main .login-form-container{
+    width:500px;
+    margin:0px auto;
+    padding-top: 100px;
+}
+.login.content .main .login-form-container .form-main .title{
+    margin-top: 50px;
+}
+.login.content .main .login-form-container .form-main .input-box{
+    margin-top: 17px;
+}
+.login.content .main .login-form-container .form-main .input-box input{
+    border-top:0;
+    border-right:0;
+    border-bottom: 1px solid #fff;
+    border-left: 0;
+    background-color:#253748;
+    width:484px;
+    color:#fff;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 28px;
+    padding-left: 10px;
+}
+.login.content .main .login-form-container .form-main .submit{
+    margin-left: 150px;
+    margin-top: 100px;
+    width:196px;
+    height: 40px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border:1px solid #707070;
+    background-color: #fff;
+    color:#2e3a48;
+    cursor:pointer;
+    text-align: center;
+    padding-top: 11px;
+}
+
+.guest.content .banner{
+    height:150px;
+    background-image: url("../images/apple-icon-114x114.png");
+    background-repeat: no-repeat;
+    background-size:60px 60px;
+    background-position: 168px 45px;
+    border-bottom:8px solid #253748;
+}
+.guest.content .banner > div{
+    display:inline-block;
+}
+.guest.content .banner .logo-content{
+    margin-top: 29px;
+    border-left:1px solid #707070;
+    margin-left:250px;
+    padding-left:30px;
+    height:93px;
+}
+.guest.content .banner .logo-content ul{
+    list-style: none;
+    margin-top:0;
+    padding-top:18px;
+    padding-left:0;
+    font-size: 27px;
+    margin-bottom: 0;
+}
+.guest.content .banner .logo-content ul li{
+    display: inline-block;
+    font-family: Poppins;
+    font-weight: 300;
+    color:#568c90;
+}
+.guest.content .banner .logo-content ul li:nth-child(2){
+    font-weight: 600;
+    color:#253748;
+    margin-left: -5px;
+}
+.guest.content .banner .logo-content ul li:last-child{
+    color:#5b8c90;
+    font-size:10px;
+    vertical-align: top;
+}
+.guest.content .banner .logo-content .bottom{
+    font-family: Poppins;
+    font-weight:700;
+    font-size:9px;
+    text-transform: uppercase;
+    letter-spacing: 4.2px;
+}
+.guest.content .main{
+    padding:26px 140px 0 140px;
+    background-color:#f9f9f9;
+    height: 100vh;
+}
+.guest.content .main .search{
+    display: table;
+    width: 100%;
+}
+.guest.content .main .search .title{
+    text-transform: uppercase;
+    display: table-cell;
+    font-size:36px;
+    color: #253748;
+}
+.guest.content .main .search .search-box{
+    text-align: right;
+    width:100%;
+    position: relative;
+}
+.guest.content .main .search .search-box .search-click{
+    position: absolute;
+    width:26px;
+    height: 26px;
+    cursor: pointer;
+    top:13px;
+    right: 13px;
+}
+.guest.content .main .search .search-box input{
+    font-style: italic;
+    font-size:20px;
+    width: 719px;
+    height: 50px;
+    background: url("../images/icons8-search@3x.png") no-repeat right 12px center;
+    background-size: 26px 26px;
+    padding-left: 12px;
+    border:1px solid #c4c4c4;
+    color:#afafaf;
+}
+.guest.content .main .guest-list ul{
+    list-style: none;
+    padding-left:0px;
+    color:#253748;
+}
+.guest.content .main .guest-list>ul>li{
+    display: block;
+    font-size:14px;
+    border-bottom:1px solid #5b8c90;
+    padding-left: 10px;
+}
+.guest.content .main .guest-list>ul>li.guest-header{
+    font-size: 18px;
+}
+.guest.content .main .guest-list>ul>li>ul{
+    display: table;
+    width:100%;
+    height: 75px;
+}
+.guest.content .main .guest-list>ul>li>ul>li{
+    text-transform: capitalize;
+    vertical-align: middle;
+}
+.guest.content .main .guest-list>ul>li>ul>li:not(:last-child){
+    display: table-cell;
+}
+.guest.content .main .guest-list>ul>li>ul>li:nth-child(1){
+    width:14%;
+}
+.guest.content .main .guest-list>ul>li>ul>li:nth-child(2){
+    width:17%;
+}
+.guest.content .main .guest-list>ul>li>ul>li:nth-child(3){
+    width:11.6%;
+}
+.guest.content .main .guest-list>ul>li>ul>li:nth-child(4){
+    width:11.7%;
+}
+.guest.content .main .guest-list>ul>li>ul>li:nth-child(5){
+    width:10.5%;
+}
+.guest.content .main .guest-list>ul>li>ul>li:nth-child(6){
+    width:100%;
+    padding-top: 20px;
+}
+.guest.content .main .guest-list>ul>li.guest-header>ul>li{
+    vertical-align: top;
+    padding-top: 18px;
+}
+.guest.content .main .guest-list>ul>li>ul>li div.coupon-btn{
+    background-color: #5b8c90;
+    border:1px solid #f5f5f5;
+    border-radius: 5px;
+    width: 185px;
+    height:35px;
+    color:#fff;
+    padding: 7px 24px 7px 24px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor:pointer;
+}
+.guest.content .main .guest-list>ul>li.guest-row:hover{
+    background-color: #253748;
+}
+.guest.content .main .guest-list>ul>li.guest-row:hover > ul{
+    color:#fff;
+}
+.guest.content .main .guest-list>ul>li.guest-row:hover div.coupon-btn {
+    background-color: #fff;
+    color:#253748;
+}
+.guest.content .main .guest-list>ul>li.guest-row.hidden{
+    display: none;
+}
+
