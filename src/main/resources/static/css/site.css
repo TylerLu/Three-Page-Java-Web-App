@@ -297,12 +297,14 @@ body{
 
 /* coupon */
 .coupon.content .main{
-    padding:33px 140px 0 140px;
+    padding:21px 140px 0 140px;
+    background-color: #e4e4e4;
 }
 .coupon.content .main .back-link{
     font-size:16px;
     font-weight: 600;
     text-transform: uppercase;
+    margin-bottom: 21px;
 }
 .coupon.content .main .back-link a {
     text-decoration: none;
@@ -310,7 +312,7 @@ body{
 .coupon.content .main .back-link a:before{
     content:  "<";
     font-size: 1.4em;
-    margin-right: 7px;
+    margin-right: 12px;
     position: relative;
     top:3px;
 }
@@ -318,6 +320,7 @@ body{
     list-style: none;
     display: table;
     padding-left: 0;
+    font-size:0;
 }
 .coupon.content .main .coupon-list ul li.coupon-item{
     width:24.3%;
@@ -333,19 +336,51 @@ body{
 .coupon.content .main .coupon-list ul li.coupon-item:nth-child(4n){
     margin-right: 0;
 }
+.coupon.content .main .coupon-list ul li.coupon-item .coupon-container{
+    padding-top: 18px;
+}
+.coupon.content .main .coupon-list ul li.coupon-item .title {
+    font-size:18px;
+    font-weight: 500;
+    color:#253748;
+    padding-left: 19px;
+}
 .coupon.content .main .coupon-list ul li.coupon-item .coupon-content {
     display: table;
+    padding-top: 10px;
 }
 .coupon.content .main .coupon-list ul li.coupon-item .coupon-content .left-img{
     display: table-cell;
     width:199px;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-content .right-content {
-    display: inline-block;
-    width: 100%;
-}
 .coupon.content .main .coupon-list ul li.coupon-item .coupon-content img{
     width:199px;
     height: 225px;
 }
-
+.coupon.content .main .coupon-list ul li.coupon-item .coupon-content .right-content {
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    text-align: center;
+}
+.coupon.content .main .coupon-list ul li.coupon-item .coupon-content .description{
+    font-size: 12px;
+    color:#707070;
+    padding-left: 19px;
+    padding-right: 18px;
+    text-align: left;
+}
+.coupon.content .main .coupon-list ul li.coupon-item .coupon-content .print-btn{
+    font-size: 14px;
+    color:#fff;
+    background-color: #5b8c90;
+    border-radius: 10px;
+    width:71px;
+    height: 25px;
+    text-align: center;
+    padding:5px 8px 5px 5px;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 7px;
+    display: inline-block;
+}

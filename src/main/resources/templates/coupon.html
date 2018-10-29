@@ -25,131 +25,17 @@
          <div class="back-link">
              <a href="/guest">back to hotel guests</a>
          </div>
-         <div class="coupon-list">
+         <div class="coupon-list" th:object="${couponsModel}">
             <ul>
-                <li class="coupon-item">
+                <li th:each="item,i : *{couponList}"  class="coupon-item">
                     <div class="coupon-container">
-                        <div class="title">Buy One Coffee, Get One Free</div>
+                        <div class="title" th:text="*{couponList[__${i.index}__].title}"></div>
                         <div class="coupon-content">
                             <div class="left-img">
-                                <img src="../images/shutterstock_219202168@2x.png" />
+                                <img th:src="*{couponList[__${i.index}__].getImgSrc()}"></img>
                             </div>
                             <div class="right-content">
-                                <div class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adpishing elit. Nam sed dignissim metus. Fusce aliquam odio et lectus accumsan, nec viverra ipsum tempor. In lorem massa, Lorem ipsum dolor sit amet.
-                                </div>
-                                <div class="print-btn">print</div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="coupon-item">
-                    <div class="coupon-container">
-                        <div class="title">Buy Two Steak Entrees, get $50 OFF</div>
-                        <div class="coupon-content">
-                            <div class="left-img">
-                                <img src="../images/shutterstock_219202168@2x.png" />
-                            </div>
-                            <div class="right-content">
-                                <div class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adpishing elit. Nam sed dignissim metus. Fusce aliquam odio et lectus accumsan, nec viverra ipsum tempor. In lorem massa, Lorem ipsum dolor sit amet.
-                                </div>
-                                <div class="print-btn">print</div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="coupon-item">
-                    <div class="coupon-container">
-                        <div class="title">Unlimited Fries with every drink</div>
-                        <div class="coupon-content">
-                            <div class="left-img">
-                                <img src="../images/shutterstock_219202168@2x.png" />
-                            </div>
-                            <div class="right-content">
-                                <div class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adpishing elit. Nam sed dignissim metus. Fusce aliquam odio et lectus accumsan, nec viverra ipsum tempor. In lorem massa, Lorem ipsum dolor sit amet.
-                                </div>
-                                <div class="print-btn">print</div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="coupon-item">
-                    <div class="coupon-container">
-                        <div class="title">25% OFF all althletic gear</div>
-                        <div class="coupon-content">
-                            <div class="left-img">
-                                <img src="../images/shutterstock_219202168@2x.png" />
-                            </div>
-                            <div class="right-content">
-                                <div class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adpishing elit. Nam sed dignissim metus. Fusce aliquam odio et lectus accumsan, nec viverra ipsum tempor. In lorem massa, Lorem ipsum dolor sit amet.
-                                </div>
-                                <div class="print-btn">print</div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="coupon-item">
-                    <div class="coupon-container">
-                        <div class="title">Buy One Coffee, Get One Free</div>
-                        <div class="coupon-content">
-                            <div class="left-img">
-                                <img src="../images/shutterstock_219202168@2x.png" />
-                            </div>
-                            <div class="right-content">
-                                <div class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adpishing elit. Nam sed dignissim metus. Fusce aliquam odio et lectus accumsan, nec viverra ipsum tempor. In lorem massa, Lorem ipsum dolor sit amet.
-                                </div>
-                                <div class="print-btn">print</div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="coupon-item">
-                    <div class="coupon-container">
-                        <div class="title">Buy One Coffee, Get One Free</div>
-                        <div class="coupon-content">
-                            <div class="left-img">
-                                <img src="../images/shutterstock_219202168@2x.png" />
-                            </div>
-                            <div class="right-content">
-                                <div class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adpishing elit. Nam sed dignissim metus. Fusce aliquam odio et lectus accumsan, nec viverra ipsum tempor. In lorem massa, Lorem ipsum dolor sit amet.
-                                </div>
-                                <div class="print-btn">print</div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="coupon-item">
-                    <div class="coupon-container">
-                        <div class="title">Buy One Coffee, Get One Free</div>
-                        <div class="coupon-content">
-                            <div class="left-img">
-                                <img src="../images/shutterstock_219202168@2x.png" />
-                            </div>
-                            <div class="right-content">
-                                <div class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adpishing elit. Nam sed dignissim metus. Fusce aliquam odio et lectus accumsan, nec viverra ipsum tempor. In lorem massa, Lorem ipsum dolor sit amet.
-                                </div>
-                                <div class="print-btn">print</div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="coupon-item">
-                    <div class="coupon-container">
-                        <div class="title">Buy One Coffee, Get One Free</div>
-                        <div class="coupon-content">
-                            <div class="left-img">
-                                <img src="../images/shutterstock_219202168@2x.png" />
-                            </div>
-                            <div class="right-content">
-                                <div class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adpishing elit. Nam sed dignissim metus. Fusce aliquam odio et lectus accumsan, nec viverra ipsum tempor. In lorem massa, Lorem ipsum dolor sit amet.
-                                </div>
+                                <div class="description" th:text="*{couponList[__${i.index}__].description}"></div>
                                 <div class="print-btn">print</div>
                             </div>
                         </div>
