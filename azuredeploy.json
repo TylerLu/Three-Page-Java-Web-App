@@ -9,14 +9,14 @@
         "description": "The name of the web app that you wish to create."
       }
     },
-    "databaseAdminLoginName": {
+    "mySQLAdminLoginName": {
       "type": "string",
       "defaultValue": "azureuser",
       "metadata": {
         "description": "Admin login name cannot be 'azure_superuser', 'admin', 'administrator', 'root', 'guest' or 'public'."
       }
     },
-    "databaseAdminLoginPassword": {
+    "mySQLAdminLoginPassword": {
       "type": "securestring",
       "defaultValue": "",
       "metadata": {
@@ -65,8 +65,8 @@
       },
       "location": "[variables('location')]",
       "properties": {
-        "administratorLogin": "[parameters('databaseAdminLoginName')]",
-        "administratorLoginPassword": "[parameters('databaseAdminLoginPassword')]",
+        "administratorLogin": "[parameters('mySQLAdminLoginName')]",
+        "administratorLoginPassword": "[parameters('mySQLAdminLoginPassword')]",
         "storageProfile": {
           "storageMB": 5120,
           "backupRetentionDays": 7,
@@ -135,8 +135,8 @@
           "name": "appsettings",
           "properties": {
             "SPRING_DATASOURCE_URL": "[concat('jdbc:mysql://', variables('mySQLServerName'), '.mysql.database.azure.com:3306/', variables('mySQLDatabaseName'), '?verifyServerCertificate=true&useSSL=true&requireSSL=false')]",
-            "SPRING_DATASOURCE_USERNAME": "[concat(parameters('databaseAdminLoginName'), '@', variables('mySQLServerName'))]",
-            "SPRING_DATASOURCE_PASSWORD": "[parameters('databaseAdminLoginPassword')]"
+            "SPRING_DATASOURCE_USERNAME": "[concat(parameters('mySQLAdminLoginName'), '@', variables('mySQLServerName'))]",
+            "SPRING_DATASOURCE_PASSWORD": "[parameters('mySQLAdminLoginPassword')]"
           },
           "dependsOn": [
             "[resourceId('Microsoft.Web/sites', parameters('webAppName'))]"
@@ -149,7 +149,7 @@
           "properties": {
             "RepoUrl": "[parameters('sourceCodeRepositoryURL')]",
             "branch": "[parameters('sourceCodeBranch')]",
-            "IsManualIntegration": "parameters('sourceCodeManualIntegration')]"
+            "IsManualIntegration": "[parameters('sourceCodeManualIntegration')]"
           },
           "dependsOn": [
             "[resourceId('Microsoft.Web/sites/', variables('webAppName'))]",
