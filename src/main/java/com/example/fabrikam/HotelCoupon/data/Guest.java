@@ -54,6 +54,10 @@ public class Guest {
         this.lastName = lastName;
     }
 
+    public String getFullName(){
+        return this.firstName + " " + this.lastName;
+    }
+
     public Date getCheckIn() {
         return checkIn;
     }

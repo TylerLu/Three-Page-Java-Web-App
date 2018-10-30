@@ -1,6 +1,9 @@
 package com.example.fabrikam.HotelCoupon.data;
 
 import javax.persistence.*;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 @Entity
@@ -82,6 +85,28 @@ public class Coupon {
     public void setRedeemableTo(Date redeemableTo) {
         this.redeemableTo = redeemableTo;
     }
+    public String getRedeemableStr(){
+        return formatDate(redeemableFrom) + " - " + formatDate(redeemableTo);
+    }
+    private String formatDate(Date dt){
+        DateFormat df = new SimpleDateFormat("MMM yyyy");
+        String reportDate = df.format(dt);
+
+        String[] suffixes =
+                //    0     1     2     3     4     5     6     7     8     9
+                { "th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th",
+                        //    10    11    12    13    14    15    16    17    18    19
+                        "th", "th", "th", "th", "th", "th", "th", "th", "th", "th",
+                        //    20    21    22    23    24    25    26    27    28    29
+                        "th", "st", "nd", "rd", "th", "th", "th", "th", "th", "th",
+                        //    30    31
+                        "th", "st" };
+
+        SimpleDateFormat formatDateOfMonth  = new SimpleDateFormat("d");
+        int day = Integer.parseInt(formatDateOfMonth.format(dt));
+        String dateStr = " " + day + suffixes[day] + ", ";
+        return reportDate.replace(" ",dateStr);
+    }
 
     public String getImage() {
         return image;
@@ -98,5 +123,8 @@ public class Coupon {
     }
     public void setQrCodeImage(String qrCodeImage) {
         this.qrCodeImage = qrCodeImage;
+    }
+    public String getQrCodeImgSrc(){
+        return base64StrPrefix + this.qrCodeImage;
     }
 }
