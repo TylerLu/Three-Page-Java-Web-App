@@ -654,7 +654,7 @@ body{
     height:176px;
 }
 
-
+/*pripnt style*/
 @media print {
     @page {size: A3 landscape; margin:0.05in;}
     html,body{margin:0;padding-bottom:0;}
