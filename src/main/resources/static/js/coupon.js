@@ -7,6 +7,7 @@ HotelCoupon.CouponFn= function(){
     coupon.$printPopupSel = ".coupon-item-detail.modal";
     coupon.$printDetailSel = ".coupon-item-detail";
     coupon.$contentSel = ".coupon.content";
+    coupon.$contentCloseModalSel = ".coupon-item-detail .modal-content .close-modal";
     coupon.$printPopupAttr = "value";
     coupon.$modalHidden = "hidden";
     coupon.getPopupDetail = function($coupon){
@@ -16,9 +17,10 @@ HotelCoupon.CouponFn= function(){
         });
         return $targetCouponPopup;
     }
-    coupon.popupDetail = function($couponPopup){
+    coupon.popupDetail = function($couponPopup,ifShow){
         $(coupon.$printDetailSel).addClass(coupon.$modalHidden);
-        $couponPopup.removeClass(coupon.$modalHidden);
+        if(ifShow===true)
+            $couponPopup.removeClass(coupon.$modalHidden);
     };
     coupon.print = function($couponPopup){
         $(".coupon.content").append($couponPopup.clone());
@@ -30,12 +32,17 @@ HotelCoupon.CouponFn= function(){
     coupon.init = function(){
         $(coupon.$printPopupTriggerSel).click(function(){
             var $targetCouponPopup = coupon.getPopupDetail($(this));
-            coupon.popupDetail($targetCouponPopup);
+            coupon.popupDetail($targetCouponPopup,true);
             return false;
         });
         $(coupon.$printPopupPreviewSel).click(function(){
             var $targetCouponPopup = coupon.getPopupDetail($(this));
             coupon.print($targetCouponPopup);
+        });
+        $(coupon.$contentCloseModalSel).click(function(){
+            var $targetCouponPopup = coupon.getPopupDetail($(this));
+            coupon.popupDetail($targetCouponPopup,false);
+            return false;
         });
     };
 };

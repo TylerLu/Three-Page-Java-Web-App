@@ -395,11 +395,12 @@ body{
     background-color: #5b8c90;
     border-radius: 10px;
     width:84px;
-    height: 26px;
+    height: 25px;
     text-align: center;
-    padding:9px 0px 0px 0px;
+    padding:10px 0px 0px 0px;
     cursor: pointer;
     display: inline-block;
+    text-transform: capitalize;
 }
 .coupon.content .main .back-link{
     font-size:16px;
@@ -514,6 +515,20 @@ body{
     width: 62.8%;
     max-width: 1206px;
     border-radius: 10px;
+    position: relative;
+}
+.coupon.content .coupon-item-detail.modal .modal-content .close-modal{
+    position: absolute;
+    top: -47px;
+    right:-1px;
+    color:#fff;
+    width:30px;
+    height: 30px;
+    font-size:38px;
+    text-align:center;
+    vertical-align: top;
+    line-height: 1em;
+    cursor:pointer;
 }
 .coupon.content .coupon-item-detail .detail-top{
     display:table;
