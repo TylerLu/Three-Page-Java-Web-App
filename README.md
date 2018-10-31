@@ -79,12 +79,23 @@ As you add and update tasks in the app you can verify the changes in the databas
 
     [![img](images/azure-deploy.png)](https://github.com/TylerLu/Huddle/blob/master/Images/azure-deploy.png)
 
+    **BASICS**:
+
+    * **Subscription**: choose one of you subscriptions.
+    * **Resource group**: it is recommend to create a new resource group.
+    * **Location**: choose a location.
+
+    **SETTINGS**:
+
     - **Web App Name**: the name of the web app. It should be unique. It is recommended to use a name like `hotel-coupon-mgmt-<YourName>-<Date>`, for example: `hotel-coupon-mgmt-bob-180129`
-    - **MySQL Admin Login Name**: The admin login of the MySQL server.
-    - **MySQL Admin Login Password**: The admin login password of the MySQL server.
+    - **MySQL Admin Login Name**: The admin login of the MySQL server. Keep the default value or use the one you prefer.
+    - **MySQL Admin Login Password**: The admin login password of the MySQL server. Please use a strong password, for example `P@ssw0rd2o18!`.
     - **Source Code Repository**: use the URL of the repository you just created -`https://github.com/<YourAccount>/Huddle`
     - **Source Code Branch**: master
     - **Source code Manual Integration**: false
+
+    **TERMS AND CONDITIONS**:
+
     - Check **I agree to the terms and conditions stated above**.
 
 4. Click **Purchase**.
