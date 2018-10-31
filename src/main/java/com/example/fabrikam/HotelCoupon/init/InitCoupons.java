@@ -6,7 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
-import sun.misc.BASE64Encoder;
+//import sun.misc.BASE64Encoder;
+import java.util.Base64;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -98,14 +99,21 @@ public class InitCoupons implements CommandLineRunner {
             ImageIO.write(image, type, bos);
             byte[] imageBytes = bos.toByteArray();
 
-            BASE64Encoder encoder = new BASE64Encoder();
-            imageString = encoder.encode(imageBytes);
+            imageString = encryptBASE64(imageBytes);
 
             bos.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
         return imageString;
+    }
+
+    public static String encryptBASE64(byte[] data) {
+        // BASE64Encoder encoder = new BASE64Encoder();
+        // String encode = encoder.encode(data);
+        Base64.Encoder encoder = Base64.getEncoder();
+        String encode = encoder.encodeToString(data);
+        return encode;
     }
 
 }
