@@ -229,7 +229,7 @@ body{
     margin-top: 50px;
 }
 .login.content .main .login-form-container .form-main .input-box{
-    margin-top: 17px;
+    margin-top: 28px;
 }
 .login.content .main .login-form-container .form-main .input-box input{
     border-top:0;
@@ -243,12 +243,13 @@ body{
     font-weight: 300;
     font-size: 28px;
     padding-left: 10px;
+    padding-bottom:9px;
 }
 .login.content .main .login-form-container .form-main .submit{
     margin-left: 150px;
     margin-top: 100px;
     width:196px;
-    height: 40px;
+    height: 35px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
@@ -257,7 +258,7 @@ body{
     color:#2e3a48;
     cursor:pointer;
     text-align: center;
-    padding-top: 11px;
+    padding-top: 16px;
 }
 
 /* guest */
