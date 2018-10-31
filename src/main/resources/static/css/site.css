@@ -1,3 +1,80 @@
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('../font/poppins-bold-webfont.eot');
+    src: url('../font/poppins-bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/poppins-bold-webfont.woff2') format('woff2'),
+    url('../font/poppins-bold-webfont.woff') format('woff'),
+    url('../font/poppins-bold-webfont.ttf') format('truetype'),
+    url('../font/poppins-bold-webfont.svg#poppinsbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinslight';
+    src: url('../font/poppins-light-webfont.eot');
+    src: url('../font/poppins-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/poppins-light-webfont.woff2') format('woff2'),
+    url('../font/poppins-light-webfont.woff') format('woff'),
+    url('../font/poppins-light-webfont.ttf') format('truetype'),
+    url('../font/poppins-light-webfont.svg#poppinslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('../font/poppins-medium-webfont.eot');
+    src: url('../font/poppins-medium-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/poppins-medium-webfont.woff2') format('woff2'),
+    url('../font/poppins-medium-webfont.woff') format('woff'),
+    url('../font/poppins-medium-webfont.ttf') format('truetype'),
+    url('../font/poppins-medium-webfont.svg#poppinsmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../font/poppins-regular-webfont.eot');
+    src: url('../font/poppins-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/poppins-regular-webfont.woff2') format('woff2'),
+    url('../font/poppins-regular-webfont.woff') format('woff'),
+    url('../font/poppins-regular-webfont.ttf') format('truetype'),
+    url('../font/poppins-regular-webfont.svg#poppinsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url('../font/poppins-semibold-webfont.eot');
+    src: url('../font/poppins-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/poppins-semibold-webfont.woff2') format('woff2'),
+    url('../font/poppins-semibold-webfont.woff') format('woff'),
+    url('../font/poppins-semibold-webfont.ttf') format('truetype'),
+    url('../font/poppins-semibold-webfont.svg#poppinssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html{
 
 }
@@ -39,12 +116,13 @@ body{
 }
 .content .banner .logo-content ul li{
     display: inline-block;
-    font-family: Poppins;
+    font-family: poppinslight;
     font-weight: 300;
     color:#568c90;
 }
 .content .banner .logo-content ul li:nth-child(2){
     font-weight: 600;
+    font-family: poppinssemibold;
     color:#253748;
     margin-left: -5px;
 }
@@ -54,7 +132,7 @@ body{
     vertical-align: top;
 }
 .content .banner .logo-content .bottom{
-    font-family: Poppins;
+    font-family: poppinsbold;
     font-weight:700;
     font-size:9px;
     text-transform: uppercase;
@@ -105,21 +183,23 @@ body{
 }
 .login.content .banner .left ul li{
     display: inline-block;
-    font-family: Poppins;
+    font-family: poppinslight;
     font-weight: 300;
     color:#568c90;
 }
 .login.content .banner .left ul li:nth-child(2){
+    font-family: poppinssemibold;
     font-weight: 600;
     color:#253748;
 }
 .login.content .banner .left ul li:last-child{
+    font-family: poppinslight;
     color:#5b8c90;
     font-size:20px;
     vertical-align: top;
 }
 .login.content .banner .left .bottom{
-    font-family: Poppins;
+    font-family: poppinsbold;
     font-weight:700;
     font-size:18px;
     letter-spacing: 6.8px;
@@ -136,7 +216,7 @@ body{
     background-color: #253748;
     height:calc(100vh - 312px);
     color: #fff;
-    font-family: Poppins;
+    font-family: poppinssemibold;
     font-weight: 600;
     font-size: 18px;
 }
@@ -159,7 +239,7 @@ body{
     background-color:#253748;
     width:484px;
     color:#fff;
-    font-family: Poppins;
+    font-family: poppinslight;
     font-weight: 300;
     font-size: 28px;
     padding-left: 10px;
@@ -194,6 +274,7 @@ body{
     display: table-cell;
     font-size:36px;
     color: #253748;
+    font-family: poppinsregular;
 }
 .guest.content .main .search .search-box{
     text-align: right;
@@ -210,6 +291,7 @@ body{
 }
 .guest.content .main .search .search-box input{
     font-style: italic;
+    font-family: poppinsregular;
     font-size:20px;
     width: 719px;
     height: 50px;
@@ -237,6 +319,10 @@ body{
     display: table;
     width:100%;
     height: 75px;
+    font-family: poppinsregular;
+}
+.guest.content .main .guest-list>ul>li.guest-header>ul{
+    font-family: poppinsmedium;
 }
 .guest.content .main .guest-list>ul>li>ul>li{
     text-transform: capitalize;
@@ -275,17 +361,19 @@ body{
     width: 185px;
     height:35px;
     color:#fff;
-    padding: 7px 24px 7px 24px;
+    padding: 9px 24px 5px 24px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     cursor:pointer;
+    font-family: poppinsregular;
 }
 .guest.content .main .guest-list>ul>li.guest-row:hover{
     background-color: #253748;
 }
 .guest.content .main .guest-list>ul>li.guest-row:hover > ul{
     color:#fff;
+    font-family: poppinsbold;
 }
 .guest.content .main .guest-list>ul>li.guest-row:hover div.coupon-btn {
     background-color: #fff;
@@ -302,13 +390,14 @@ body{
 }
 .coupon.content .main .print-btn{
     font-size: 14px;
+    font-family: poppinsregular;
     color:#fff;
     background-color: #5b8c90;
     border-radius: 10px;
-    width:71px;
-    height: 25px;
+    width:84px;
+    height: 26px;
     text-align: center;
-    padding:5px 8px 5px 5px;
+    padding:9px 0px 0px 0px;
     cursor: pointer;
     display: inline-block;
 }
@@ -320,6 +409,7 @@ body{
 }
 .coupon.content .main .back-link a {
     text-decoration: none;
+    font-family: poppinssemibold;
 }
 .coupon.content .main .back-link a:before{
     content:  "<";
@@ -356,6 +446,7 @@ body{
     font-weight: 500;
     color:#253748;
     padding-left: 19px;
+    font-family: poppinsmedium;
 }
 .coupon.content .main .coupon-list ul li.coupon-item .coupon-content {
     display: table;
@@ -370,7 +461,7 @@ body{
     height: 225px;
 }
 .coupon.content .main .coupon-list ul li.coupon-item .coupon-content .right-content {
-    display: inline-block;
+    display: table-cell;
     width: 100%;
     vertical-align: top;
     text-align: center;
@@ -381,6 +472,8 @@ body{
     padding-left: 19px;
     padding-right: 18px;
     text-align: left;
+    font-family: poppinsregular;
+    line-height: 1.5em;
 }
 .coupon.content .main .coupon-list ul li.coupon-item .coupon-content .print-btn{
     margin-top: 25px;
@@ -400,8 +493,7 @@ body{
     color:#253748;
 }
 
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail.modal{
-    display: none;
+.coupon.content .coupon-item-detail.modal{
     position: fixed;
     z-index: 1;
     left: 0;
@@ -412,15 +504,18 @@ body{
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.8);
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail.modal .modal-content {
+.coupon.content .coupon-item-detail.modal.hidden{
+    display: none;
+}
+.coupon.content .coupon-item-detail.modal .modal-content {
     background-color: #fff;
-    margin: 15% auto;
+    margin: 85px auto;
     border: 1px solid #888;
     width: 62.8%;
     max-width: 1206px;
     border-radius: 10px;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-top{
+.coupon.content .coupon-item-detail .detail-top{
     display:table;
     width:100%;
     padding-top: 32px;
@@ -428,30 +523,31 @@ body{
     padding-right:40px;
     box-sizing:border-box;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-title{
+.coupon.content .coupon-item-detail .detail-title{
     font-size:30px;
     font-weight: 500;
     color:#253748;
     display: table-cell;
+    font-family: poppinsmedium;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-top-right {
+.coupon.content .coupon-item-detail .detail-top-right {
     width:100%;
     text-align: right;
     display: inline-block;
     vertical-align: top;
     padding-top: 10px;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .print-btn{
+.coupon.content .coupon-item-detail .print-btn{
     font-size:14px;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-middle{
+.coupon.content .coupon-item-detail .detail-middle{
     display: inline-block;
     padding:20px 40px 60px 40px;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-middle > div{
+.coupon.content .coupon-item-detail .detail-middle > div{
     display: inline-block;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-img{
+.coupon.content .coupon-item-detail .detail-img{
     width:32.7%;
     max-width:394px;
     position: relative;
@@ -459,7 +555,7 @@ body{
     height: 316px;
     border-radius: 10px;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-img img{
+.coupon.content .coupon-item-detail .detail-img img{
     display: block;
     position: absolute;
     top:50%;
@@ -468,57 +564,97 @@ body{
     min-width:100%;
     transform: translate(-50%, -50%);
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-content{
+.coupon.content .coupon-item-detail .detail-content{
     font-size:16px;
     width:60%;
     vertical-align: top;
     padding-left: 59px;
     color:#253748;
+    font-family: regular;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-content .gray-title{
+.coupon.content .coupon-item-detail .detail-content .gray-title{
     font-size:16px;
     color:#707070;
     display: inline-block;
     font-weight: 400;
+    font-family: poppinsregular;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-content .customer{
+.coupon.content .coupon-item-detail .detail-content .customer{
     font-weight:600;
+    font-family: poppinssemibold;
 }
 
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-content .customer>div{
+.coupon.content .coupon-item-detail .detail-content .customer>div{
     display: inline-block;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-content .detail-description{
+.coupon.content .coupon-item-detail .detail-content .detail-description{
     margin-top: 25px;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-content .detail-location-title{
+.coupon.content .coupon-item-detail .detail-content .detail-location-title{
     margin-top:28px;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-content .detail-company-location{
+.coupon.content .coupon-item-detail .detail-content .detail-company-location{
     font-weight:600;
     margin-top:24px;
+    font-family: poppinssemibold;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-content .redeemable{
-    margin-top: 24px
+.coupon.content .coupon-item-detail .detail-content .detail-company-location>div{
+    margin-bottom: 9px;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-content .redeemable>div{
+.coupon.content .coupon-item-detail .detail-content .detail-company-location>div:last-child{
+    margin-bottom: 0;
+}
+.coupon.content .coupon-item-detail .detail-content .redeemable{
+    margin-top: 24px;
+}
+.coupon.content .coupon-item-detail .detail-content .redeemable>div{
     display: inline-block;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-content .redeemable .redeemable-text{
+.coupon.content .coupon-item-detail .detail-content .redeemable .redeemable-text{
     font-weight: 600;
+    font-family: poppinssemibold;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-bottom{
+.coupon.content .coupon-item-detail .detail-bottom{
     background-color: #eaeaea;
     height: 432px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding-top:128px;
+    box-sizing: border-box;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-bottom .qr-img {
+.coupon.content .coupon-item-detail .detail-bottom .qr-img {
     margin:0px auto;
     text-align: center;
 }
-.coupon.content .main .coupon-list ul li.coupon-item .coupon-item-detail .detail-bottom .qr-img img{
+.coupon.content .coupon-item-detail .detail-bottom .qr-img img{
     width:176px;
     height:176px;
 }
+
+
+@media print {
+    @page {size: A3 landscape; margin:0.05in;}
+    html,body{margin:0;padding-bottom:0;}
+    .coupon.content .banner{display: none;}
+    .coupon.content .main{display: none;}
+    .modal {
+        margin: 0;
+        padding: 0;
+        overflow: visible!important;
+    }
+    .coupon.content .coupon-item-detail.modal .modal-content{
+        margin-top:25px;
+        padding-bottom:0;
+    }
+    .coupon.content .coupon-item-detail .print-btn.preview{
+        display: none;
+    }
+    .coupon.content .coupon-item-detail .detail-bottom{
+        -webkit-print-color-adjust: exact;
+        color-adjust:exact;
+        background-color: #eaeaea;
+        box-shadow: inset 0 0 0 432px #eaeaea;
+        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#eaeaea', endColorstr='#eaeaea')"
+    }
+}
+
