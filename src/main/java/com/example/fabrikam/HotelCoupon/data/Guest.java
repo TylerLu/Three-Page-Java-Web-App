@@ -1,6 +1,8 @@
 package com.example.fabrikam.HotelCoupon.data;
 
 import javax.persistence.*;
+import java.text.Format;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @Entity
@@ -18,6 +20,8 @@ public class Guest {
     @ManyToOne (fetch = FetchType.LAZY)
     @JoinColumn(name = "room_type")
     private RoomType roomType;
+
+    private static final String guestDateFormat="MM/dd/yyyy";
 
     public Guest() {}
 
@@ -66,12 +70,22 @@ public class Guest {
         this.checkIn = checkIn;
     }
 
+    public String getCheckInDate(){
+        Format formatter = new SimpleDateFormat(guestDateFormat);
+        return formatter.format(checkIn);
+    }
+
     public Date getCheckOut() {
         return checkOut;
     }
 
     public void setCheckOut(Date checkOut) {
         this.checkOut = checkOut;
+    }
+
+    public String getCheckOutDate(){
+        Format formatter = new SimpleDateFormat(guestDateFormat);
+        return formatter.format(checkOut);
     }
 
     public RoomType getRoomType() {

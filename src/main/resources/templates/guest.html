@@ -45,8 +45,8 @@
                      <ul>
                          <li th:text="*{guestList[__${i.index}__].firstName}"></li>
                          <li th:text="*{guestList[__${i.index}__].lastName}"></li>
-                         <li th:text="*{guestList[__${i.index}__].checkIn}"></li>
-                         <li th:text="*{guestList[__${i.index}__].checkOut}"></li>
+                         <li th:text="*{guestList[__${i.index}__].getCheckInDate()}"></li>
+                         <li th:text="*{guestList[__${i.index}__].getCheckOutDate()}"></li>
                          <li th:text="*{guestList[__${i.index}__].roomType.typeName}"></li>
                          <li>
                              <input type="hidden" th:field="*{guestList[__${i.index}__].id}"/>

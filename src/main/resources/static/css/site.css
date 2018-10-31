@@ -411,6 +411,7 @@ body{
 .coupon.content .main .back-link a {
     text-decoration: none;
     font-family: poppinssemibold;
+    color:#253748;
 }
 .coupon.content .main .back-link a:before{
     content:  "<";
