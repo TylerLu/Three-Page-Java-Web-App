@@ -1,6 +1,6 @@
-# Sample To Do List web application using Spring Boot and MySQL
+# Smart hotel Coupon web application using Spring Boot and MySQL
 
-A simple Todo list application using Spring Boot with the following options:
+Smart Hotel Coupon web application using Spring Boot with the following options:
 
 - Spring JPA and MySQL for data persistence
 - Thymeleaf templae for the rendering.
@@ -16,11 +16,10 @@ To build and run the sample from a fresh clone of this repo:
 ## Build and run the sample
 
 1. `mvnw package`
-3. `java -jar target/TodoDemo-0.0.1-SNAPSHOT.jar`
-3. Open a web browser to http://localhost:8080
+2. Open a web browser to http://localhost:8080
 
-As you add and update tasks in the app you can verify the changes in the database through the MySQL console using simple statements like 
-`select * from todo_item`.
+As you search and review the guests coupons in the app you can verify the search result in the database through the MySQL console using simple statements like 
+`select * from guest`.
 
 
 
