@@ -316,11 +316,17 @@ body{
     border:1px solid #c4c4c4;
     color:#afafaf;
 }
+.guest.content .main .search .search-box input::-ms-clear{
+    display: none;
+}
 .guest.content .main .search .search-box input:focus::-webkit-input-placeholder{
     color: transparent;
 }
 .guest.content .main .search .search-box :focus::-ms-input-placeholder{
     color:transparent;
+}
+.guest.content .main .guest-list {
+    padding-top: 33px;
 }
 .guest.content .main .guest-list ul{
     list-style: none;
@@ -433,7 +439,7 @@ body{
 .coupon.content .main .back-link a {
     text-decoration: none;
     font-family: poppinssemibold;
-    color:#253748;
+    color:#5b8c90;
 }
 .coupon.content .main .back-link a:before{
     content:  "<";
@@ -441,6 +447,7 @@ body{
     margin-right: 12px;
     position: relative;
     top:3px;
+    color:#253748;
 }
 .coupon.content .main .coupon-list ul{
     list-style: none;
@@ -527,6 +534,7 @@ body{
     overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.8);
+    overflow-y: hidden;
 }
 .coupon.content .coupon-item-detail.modal.hidden{
     display: none;
@@ -534,6 +542,7 @@ body{
 .coupon.content .coupon-item-detail.modal .modal-content {
     background-color: #fff;
     margin: 85px auto;
+    margin-top:50px;
     border: 1px solid #888;
     width: 62.8%;
     max-width: 1206px;
@@ -627,13 +636,15 @@ body{
 }
 .coupon.content .coupon-item-detail .detail-content .detail-description{
     margin-top: 25px;
+    font-family: poppinsregular;
+    line-height: 25px;
 }
 .coupon.content .coupon-item-detail .detail-content .detail-location-title{
     margin-top:28px;
 }
 .coupon.content .coupon-item-detail .detail-content .detail-company-location{
     font-weight:600;
-    margin-top:24px;
+    margin-top:30px;
     font-family: poppinssemibold;
 }
 .coupon.content .coupon-item-detail .detail-content .detail-company-location>div{
