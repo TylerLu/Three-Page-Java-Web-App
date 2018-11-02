@@ -551,7 +551,7 @@ body{
 }
 .coupon.content .coupon-item-detail.modal .modal-content .close-modal{
     position: absolute;
-    top: -47px;
+    top: -43px;
     right:-1px;
     color:#fff;
     width:30px;
@@ -561,6 +561,7 @@ body{
     vertical-align: top;
     line-height: 1em;
     cursor:pointer;
+    background:url("../images/close-btn.png") no-repeat;
 }
 .coupon.content .coupon-item-detail .detail-top{
     display:table;
