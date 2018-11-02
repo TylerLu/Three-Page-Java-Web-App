@@ -95,9 +95,23 @@ body{
     background-size:60px 60px;
     background-position: 168px 45px;
     border-bottom:8px solid #253748;
+    position: relative;
 }
 .content .banner > div{
     display:inline-block;
+}
+.content .banner .logout{
+    position: absolute;
+    right:141px;
+    top:100px;
+}
+.content .banner .logout a{
+    text-transform: uppercase;
+    color:#5b8c90;
+    font-family: poppinsregular;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
 }
 .content .banner .logo-content{
     margin-top: 29px;
@@ -360,6 +374,7 @@ body{
 .guest.content .main .guest-list>ul>li.guest-header>ul>li{
     vertical-align: top;
     padding-top: 18px;
+    text-transform: none;
 }
 .guest.content .main .guest-list>ul>li>ul>li div.coupon-btn{
     background-color: #5b8c90;
