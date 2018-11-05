@@ -9,7 +9,7 @@ To build and run the sample from a fresh clone of this repo:
 
 ## Configure MySQL
 
-1. Create a database "hotel_coupon" in your MySQL instance. Please make sure that your MySQL version is 5.7.
+1. Create a database "hotel_coupon" in your MySQL instance first. Please make sure that your MySQL version is 5.7.
 2. Update the application.properties file in the `src/main/resources` folder with the URL, username and password for your MySQL instance. The table schema for the hotel coupon objects will be created for you in the database.
 
 
