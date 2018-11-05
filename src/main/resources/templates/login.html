@@ -30,14 +30,14 @@
                  <div class="form-main">
                      <div class="title">Username</div>
                      <div class="input-box">
-                         <input type="input"  class="form-control" id="inputUsername" name="username" th:value="*{username}" />
+                         <input type="input"  class="form-control" id="inputUsername" name="username" th:value="*{username}" tabindex="1" />
                      </div>
                      <div class="title">Password</div>
                      <div class="input-box"  th:classappend="${loginState} ? '':'error'">
-                         <input type="password" class="form-control" id="inputPassword"  name="password" th:value="*{password}" />
+                         <input type="password" class="form-control" id="inputPassword"  name="password" th:value="*{password}"  tabindex="2"/>
                          <div class="error-message">The entered username or password is incorrect.</div>
                      </div>
-                     <div class="submit">Login</div>
+                     <div class="submit" tabindex="3">Login</div>
                  </div>
              </form>
          </div>
