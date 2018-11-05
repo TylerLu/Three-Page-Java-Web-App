@@ -3,19 +3,19 @@
 Smart Hotel Coupon web application using Spring Boot with the following options:
 
 - Spring JPA and MySQL for data persistence
-- Thymeleaf templae for the rendering.
+- Thymeleaf template for the rendering.
 
 To build and run the sample from a fresh clone of this repo:
 
 ## Configure MySQL
 
-1. Create a database in your MySQL instance.
-2. Update the application.properties file in the `src/main/resources` folder with the URL, username and password for your MySQL instance. The table schema for the Todo objects will be created for you in the database.
+1. Create a database "hotel_coupon" in your MySQL instance. Please make sure that your MySQL version is 5.7.
+2. Update the application.properties file in the `src/main/resources` folder with the URL, username and password for your MySQL instance. The table schema for the hotel coupon objects will be created for you in the database.
 
 
 ## Build and run the sample
 
-1. `mvnw package`
+1. `mvnw spring-boot:run`
 2. Open a web browser to http://localhost:8080
 
 As you search and review the guests coupons in the app you can verify the search result in the database through the MySQL console using simple statements like 
@@ -98,3 +98,5 @@ As you search and review the guests coupons in the app you can verify the search
     - Check **I agree to the terms and conditions stated above**.
 
 4. Click **Purchase**.
+
+5. Visit the created hotel coupon web site at http://**Web App Name**.azurewebsites.net/
