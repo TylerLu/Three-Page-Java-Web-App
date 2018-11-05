@@ -14,5 +14,5 @@ RUN set -x \
 
 RUN export CLASSPATH=$CLASSPATH:/usr/share/java/mysql-connector-java.jar
 
-ADD ./target/ROOT.war /usr/local/tomcat/webapps/ROOT.war
+ADD ./target/ROOT.war /usr/local/tomcat/webapps/hotel-coupon-mgmt.war
 
