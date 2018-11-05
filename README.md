@@ -99,4 +99,4 @@ As you search and review the guests coupons in the app you can verify the search
 
 4. Click **Purchase**.
 
-5. Visit the created hotel coupon web site at http://**Web App Name**.azurewebsites.net/
+5. Visit the created hotel coupon web site at http://**[Web App Name]**.azurewebsites.net/
