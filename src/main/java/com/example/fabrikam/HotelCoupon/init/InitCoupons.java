@@ -46,24 +46,29 @@ public class InitCoupons implements CommandLineRunner {
         for(String str : args){
             System.out.println("InitCoupons---------->"+str);
         }
-        String[] addressLine1Array = new String[]{"1127 Eraad Lane","1720 Fogug Boulevard","830 Wapcig View","67 Wuhenu Street","512 Tadta Pass","1399 Hoca Key","1201 Botdip Court","750 Hafek Center"};
-        String[] addressLine2Array = new String[]{"CRYSTAL LAKE, IL 60014","NEW BALTIMORE, MI 48047","WENATCHEE, WA 98801","PERTH AMBOY, NJ 08861","OSWEGO, NY 13126","PELHAM, AL 35124","DUBUQUE, IA 52001","ROCKY MOUNT, NC 27804"};
-        String[] companyNameArray = new String[]{"Fourth Coffee","La Pepica","Scotts","Dim Sum","IKEA","GlenShee","Lily Vanilli","Lee"};
+        String[] addressLine1Array = new String[]{"12423 Main St","9020 Third Ave","555 Virginia St","9020 Third Ave","1922 Wilfred Ave","1923 Wilfred Ave","9020 Third Ave","230 Fifth Ave"};
+        String[] addressLine2Array = new String[]{"Seattle, WA, 98101","Seattle, WA, 98101","Seattle, WA, 98101","Seattle, WA, 98101","Seattle, WA, 98101","Seattle, WA, 98101","Seattle, WA, 98101","Seattle, WA, 98101"};
+        String[] companyNameArray = new String[]{"Fourth Coffee","Liberty Delightful Sinful Bakery & Café","Contoso","Liberty Delightful Sinful Bakery & Café","Alpine Ski House","Alpine Ski House","Liberty Delightful Sinful Bakery & Café","Northwind Traders"};
         String[] titleArray = new String[]{"Buy One Coffee, Get One Free","Buy Two Entrees, get $50 OFF","Unlimited Fries with every drink","25% OFF all baked goods","$200 OFF 3-night hotel stay","20% OFF Night Skiing passes","Buy One Dozen Cupcakes, Get 2 Free","50% OFF all sale merchandise"};
 
+        String[] descriptionArray = new String[]{"Get your caffeine on at one of the best coffee houses in the city! Select from one of our 10 delicious house flavors.","Enjoy the best food the city has to offer! Enjoy two entrees today and receive a $50 discount off the total bill.","Can get enough fries? Order a drink and fries and enjoy unlimited refills on fries today!","Have you tried our famous croissants or our fresh muffins baked daily? Now get a 25% discount on any of our fresh baked goods today!","Luxury awaits you at the finest hotel in the city! Book a 3-night hotel stay with us and receive $200 off upon checking in.","Ski at the best local resort from 7pm-12am every night and enjoy the panaromic city views from the top! Purchase your night skiing pass today and receive 20% off your purchase.","Can't get enough cupcakes for your party? Enjoy the city's most delicious cupcakes and share the joy amongst your family and friends! Buy a dozen cupcakes today and get 2 more cupcakes free!","The latest trends in clothing doesn't have to be expensive - now enjoy 50% off all apparel already marked at a discount and stay stylish at modest prices!"};
 
         String[] imageNameArray = new String[]{
                 "shutterstock_261745823@2x.png","shutterstock_219202168@2x.png","shutterstock_273398612@2x.png","shutterstock_441814081@2x.png","shutterstock_560973166@2x.png","shutterstock_530971099@2x.png","shutterstock_410864815@2x.png","shutterstock_453427750@2x.png"
         };
         String qrCodeImgName = "QRcode@2x.png";
 
+
         for(int i = 0;i<8;i++){
             Coupon newCoupon = new Coupon();
             newCoupon.setAddressLine1(addressLine1Array[i]);
             newCoupon.setAddressLine2(addressLine2Array[i]);
             newCoupon.setCompanyName(companyNameArray[i]);
-            newCoupon.setDescription("Lorem ipsum dolor sit amet, consectetur adpishing elit. Nam sed dignissim metus. Fusce aliquam odio et lectus accumsan, nec viverra ipsum tempor. In lorem massa, Lorem ipsum dolor sit amet.");
-            Date[] fromTo = getRandomFromTo();
+            newCoupon.setDescription(descriptionArray[i]);
+            Date[] fromTo = new Date[]{
+                    new Date(2018,6,16),
+                    new Date(2019,0,1)
+            };
             newCoupon.setRedeemableFrom(fromTo[0]);
             newCoupon.setRedeemableTo(fromTo[1]);
             newCoupon.setImage(getBase64ImgString(imageNameArray[i]));

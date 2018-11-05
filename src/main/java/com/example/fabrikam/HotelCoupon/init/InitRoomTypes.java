@@ -27,7 +27,7 @@ public class InitRoomTypes implements CommandLineRunner {
         for(String str : args){
             System.out.println("InitRoomTypes---------->"+str);
         }
-        String[] roomTypesArray = new String[]{"Executive","Junior Suite","Harbor View","Penthouse"};
+        String[] roomTypesArray = new String[]{"Executive","Junior Suite","Harbor View","Garden View","Penthouse"};
         for (String roomTypeName : roomTypesArray) {
             if(roomTypeRepository.findByTypeName(roomTypeName).isEmpty()){
                 roomTypeRepository.save(new RoomType(roomTypeName));

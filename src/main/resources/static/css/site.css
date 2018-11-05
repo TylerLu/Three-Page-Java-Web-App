@@ -528,6 +528,7 @@ div.input-box.error .error-message{
     width: 100%;
     vertical-align: top;
     text-align: center;
+    position: relative;
 }
 .coupon.content .main .coupon-list ul li.coupon-item .coupon-content .description{
     font-size: 12px;
@@ -541,6 +542,9 @@ div.input-box.error .error-message{
 .coupon.content .main .coupon-list ul li.coupon-item .coupon-content .print-btn{
     margin-top: 25px;
     margin-left: 7px;
+    position: absolute;
+    bottom:0;
+    right:54px;
 }
 .coupon.content .main .coupon-list ul li.coupon-item:hover{
     background-color: #253748;
@@ -621,6 +625,7 @@ div.input-box.error .error-message{
 .coupon.content .coupon-item-detail .detail-middle{
     display: inline-block;
     padding:20px 40px 60px 40px;
+    width:95%;
 }
 .coupon.content .coupon-item-detail .detail-middle > div{
     display: inline-block;
