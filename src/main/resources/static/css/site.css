@@ -96,6 +96,7 @@ body{
     background-position: 168px 45px;
     border-bottom:8px solid #253748;
     position: relative;
+    margin-left:50px;
 }
 .content .banner > div{
     display:inline-block;
@@ -113,12 +114,21 @@ body{
     font-size: 14px;
     cursor: pointer;
 }
+.content .banner .logo-left-clickable{
+    position: absolute;
+    width:93px;
+    height: 93px;
+    cursor: pointer;
+    left:168px;
+    top:45px;
+}
 .content .banner .logo-content{
     margin-top: 29px;
     border-left:1px solid #707070;
     margin-left:250px;
     padding-left:30px;
     height:93px;
+    cursor: pointer;
 }
 .content .banner .logo-content ul{
     list-style: none;
@@ -157,6 +167,20 @@ body{
     height: calc(100vh - 150px);
 }
 
+.error-message{
+    display: none;
+}
+div.input-box.error input{
+    background-color: #fce4e4;
+    border-bottom: 1px solid #cc0033 !important;
+}
+div.input-box.error .error-message{
+    display: inline-block;
+    color: #cc0033;
+    display: inline-block;
+    padding-top:10px;
+}
+
 
 .login.content{
 
@@ -171,7 +195,7 @@ body{
     display:inline-block;
 }
 .login.content .banner .left{
-    width:49%;
+    width:40%;
     height:100%;
     vertical-align: top;
     text-align: left;
@@ -223,8 +247,8 @@ body{
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 60px;
-    width:49%;
+    background-position: 0px;
+    width:51.5%;
 }
 .login.content .main{
     background-color: #253748;
@@ -305,8 +329,9 @@ body{
     right: 13px;
 }
 .guest.content .main .search .search-box input{
-    font-style: italic;
     font-family: poppinsregular;
+    line-height: 2.6em;
+    color:#253748;
     font-size:20px;
     width: 719px;
     height: 50px;
@@ -314,7 +339,14 @@ body{
     background-size: 26px 26px;
     padding-left: 12px;
     border:1px solid #c4c4c4;
+}
+.guest.content .main .search .search-box input::-webkit-input-placeholder {
     color:#afafaf;
+    font-style: italic;
+}
+.guest.content .main .search .search-box input:-ms-input-placeholder {
+    color:#afafaf;
+    font-style: italic;
 }
 .guest.content .main .search .search-box input::-ms-clear{
     display: none;
@@ -582,8 +614,6 @@ body{
     width:100%;
     text-align: right;
     display: inline-block;
-    vertical-align: top;
-    padding-top: 10px;
 }
 .coupon.content .coupon-item-detail .print-btn{
     font-size:14px;

@@ -33,8 +33,9 @@
                          <input type="input"  class="form-control" id="inputUsername" name="username" th:value="*{username}" />
                      </div>
                      <div class="title">Password</div>
-                     <div class="input-box">
+                     <div class="input-box"  th:classappend="${loginState} ? '':'error'">
                          <input type="password" class="form-control" id="inputPassword"  name="password" th:value="*{password}" />
+                         <div class="error-message">The entered username or password is incorrect.</div>
                      </div>
                      <div class="submit">Login</div>
                  </div>

@@ -10,6 +10,7 @@ HotelCoupon.CouponFn= function(){
     coupon.$contentCloseModalSel = ".coupon-item-detail .modal-content .close-modal";
     coupon.$printPopupAttr = "value";
     coupon.$modalHidden = "hidden";
+    coupon.$logoClickableSel = ".banner .logo-left-clickable, .banner .logo-content";
     coupon.getPopupDetail = function($coupon){
         var couponId = $coupon.attr(coupon.$printPopupAttr);
         var $targetCouponPopup = $(coupon.$printPopupSel).filter(function(){
@@ -43,6 +44,9 @@ HotelCoupon.CouponFn= function(){
             var $targetCouponPopup = coupon.getPopupDetail($(this));
             coupon.popupDetail($targetCouponPopup,false);
             return false;
+        });
+        $(coupon.$logoClickableSel).click(function(){
+            window.location.href="/guest";
         });
     };
 };

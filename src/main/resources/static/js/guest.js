@@ -6,6 +6,7 @@ HotelCoupon.GuestFn= function(){
     guest.$searchInputSel = "div.search-box input";
     guest.$couponBtnSel = ".guest-list .coupon-btn";
     guest.$guestRowSel = ".guest-list .guest-row";
+    guest.$logoClickableSel = ".banner .logo-left-clickable, .banner .logo-content";
     guest.search = function(){
         var searchKey = $(guest.$searchInputSel).val().toLowerCase().trim();
         console.log($(guest.$guestRowSel));
@@ -34,6 +35,9 @@ HotelCoupon.GuestFn= function(){
         $(guest.$couponBtnSel).click(function(){
             var guestId = $(this).prev().val();
             guest.generateCoupon(guestId);
+        });
+        $(guest.$logoClickableSel).click(function(){
+            window.location.reload();
         });
     };
 };
