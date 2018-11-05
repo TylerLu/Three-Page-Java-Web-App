@@ -45,12 +45,9 @@ resource "azurerm_app_service" "dev" {
     "DOCKER_REGISTRY_SERVER_URL"      =  "https://${var.acr["host"]}"
     "DOCKER_REGISTRY_SERVER_USERNAME" =  "${var.acr["username"]}"
     "DOCKER_REGISTRY_SERVER_PASSWORD" =  "${var.acr["password"]}"
-  }
-
-  connection_string {
-    name  = "MyShuttleDb"
-    type  = "MySql"
-    value = "jdbc:mysql://${var.azure["resource_name"]}.mysql.database.azure.com:3306/${var.mysql["database"]}?user=${var.mysql["username"]}@${var.azure["resource_name"]}&password=${var.mysql["password"]}"
+    "SPRING_DATASOURCE_URL"           =  "jdbc:mysql://${var.azure["resource_name"]}.mysql.database.azure.com:3306/${var.mysql["database"]}?verifyServerCertificate=true&useSSL=true&requireSSL=false",
+    "SPRING_DATASOURCE_USERNAME"      =  "${var.mysql["username"]}@${var.azure["resource_name"]}",
+    "SPRING_DATASOURCE_PASSWORD"      =  "${var.mysql["password"]}"
   }
 }
 
