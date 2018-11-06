@@ -65,9 +65,10 @@ public class InitCoupons implements CommandLineRunner {
             newCoupon.setAddressLine2(addressLine2Array[i]);
             newCoupon.setCompanyName(companyNameArray[i]);
             newCoupon.setDescription(descriptionArray[i]);
+            int basicYear = 1900;
             Date[] fromTo = new Date[]{
-                    new Date(2018,6,16),
-                    new Date(2019,0,1)
+                    new Date(2018-basicYear,6,16),
+                    new Date(2019-basicYear,0,1)
             };
             newCoupon.setRedeemableFrom(fromTo[0]);
             newCoupon.setRedeemableTo(fromTo[1]);

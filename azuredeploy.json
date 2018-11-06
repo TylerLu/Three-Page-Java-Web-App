@@ -25,7 +25,7 @@
     },
     "sourceCodeRepositoryURL": {
       "type": "string",
-      "defaultValue": "https://github.com/<YourAccount>/Three-Page-Java-Web-App",
+      "defaultValue": "https://github.com/<YourAccount>/SmartHotel360-CouponManagement",
       "metadata": {
         "description": "Source code repository URL"
       }
