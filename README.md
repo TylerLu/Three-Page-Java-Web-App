@@ -9,7 +9,7 @@ To build and run the sample from a fresh clone of this repo:
 
 ## Configure MySQL
 
-1. Create a database "hotel_coupon" in your MySQL instance first. Please make sure that your MySQL version is 5.7.
+1. Create a database "hotel_coupon" in your MySQL instance. Please make sure that your MySQL version is 5.7.
 2. Update the application.properties file in the `src/main/resources` folder with the URL, username and password for your MySQL instance. The table schema for the hotel coupon objects will be created for you in the database.
 
 
@@ -42,7 +42,7 @@ As you search and review the guests coupons in the app you can verify the search
      - repo (all) -> repo:status, repo_deployment, public_repo
      - admin:repo_hook -> read:repo_hook
 
-     [![img](images/github-new-personal-access-token.png)](https://github.com/TylerLu/Huddle/blob/master/Images/github-new-personal-access-token.png)
+     ![](images/github-new-personal-access-token.png)
 
    - Click **Generate token**.
 
@@ -62,7 +62,7 @@ As you search and review the guests coupons in the app you can verify the search
 
    - Paste the token into the **token parameter**.
 
-     [![img](images/update-github-token-in-azure-resource-explorer.png)](https://github.com/TylerLu/Huddle/blob/master/Images/update-github-token-in-azure-resource-explorer.png)
+     ![img](images/update-github-token-in-azure-resource-explorer.png)
 
    - Click **PUT**.
 
@@ -72,7 +72,7 @@ As you search and review the guests coupons in the app you can verify the search
 
 2. Click the Deploy to Azure Button:
 
-    [![Deploy to Azure](https://camo.githubusercontent.com/9285dd3998997a0835869065bb15e5d500475034/687474703a2f2f617a7572656465706c6f792e6e65742f6465706c6f79627574746f6e2e706e67)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FTylerLu%2FThree-Page-Java-Web-App%2Fmaster%2Fazuredeploy.json)
+    [![Deploy to Azure](https://camo.githubusercontent.com/9285dd3998997a0835869065bb15e5d500475034/687474703a2f2f617a7572656465706c6f792e6e65742f6465706c6f79627574746f6e2e706e67)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoft%2FSmartHotel360-CouponManagement%2Fmaster%2Fazuredeploy.json)
 
 3. Fill in the values on the deployment page:
 
@@ -87,10 +87,17 @@ As you search and review the guests coupons in the app you can verify the search
     **SETTINGS**:
 
     - **Web App Name**: the name of the web app. It should be unique. It is recommended to use a name like `hotel-coupon-mgmt-<YourName>-<Date>`, for example: `hotel-coupon-mgmt-bob-180129`
-    - **MySQL Admin Login Name**: The admin login of the MySQL server. Keep the default value or use the one you prefer.
+
+    - **MySQL Admin Login Name**: The admin login name of the MySQL server. Keep the default value or use the one you prefer.
+
+      > Note: Please do not use 'azure_superuser', 'admin', 'administrator', 'root', 'guest' or 'public'.
+
     - **MySQL Admin Login Password**: The admin login password of the MySQL server. Please use a strong password, for example `P@ssw0rd2o18!`.
+
     - **Source Code Repository**: use the URL of the repository you just created -`https://github.com/<YourAccount>/Huddle`
+
     - **Source Code Branch**: master
+
     - **Source code Manual Integration**: false
 
     **TERMS AND CONDITIONS**:
