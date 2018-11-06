@@ -62,7 +62,7 @@ As you search and review the guests coupons in the app you can verify the search
 
    - Paste the token into the **token parameter**.
 
-     ![img](images/update-github-token-in-azure-resource-explorer.png)
+     ![](images/update-github-token-in-azure-resource-explorer.png)
 
    - Click **PUT**.
 
@@ -76,7 +76,7 @@ As you search and review the guests coupons in the app you can verify the search
 
 3. Fill in the values on the deployment page:
 
-    [![img](images/azure-deploy.png)](https://github.com/TylerLu/Huddle/blob/master/Images/azure-deploy.png)
+    ![](images/azure-deploy.png)
 
     **BASICS**:
 
